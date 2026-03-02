@@ -1,0 +1,27 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/app/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Local tool data (token cache, undo logs stored in user home, not repo)
+*.pkl
