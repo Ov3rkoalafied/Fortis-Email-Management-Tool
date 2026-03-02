@@ -69,7 +69,7 @@ def get_cached_token() -> Optional[dict]:
 def _do_interactive_login() -> dict:
     """Blocking - opens browser for user login. Run in thread executor."""
     app = _get_msal_app()
-    result = app.acquire_token_interactive(scopes=SCOPES, redirect_uri=REDIRECT_URI)
+    result = app.acquire_token_interactive(scopes=SCOPES, port=8400)
     _save_token_cache()
     return result
 
